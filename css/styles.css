@@ -1,0 +1,136 @@
+
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Aleo', sans-serif;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  background-color: lightgrey;
+}
+
+header h1 {
+  /* margin: 0 auto;
+  padding-top: 25px; */
+  margin-top: 0;
+  padding-top: 25px;
+}
+/* code above removed top white space of header */
+/* either code works */
+
+.header-bottom {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-bottom img {
+  max-width: 70%;
+}
+
+.header-bottom p {
+  padding-bottom: 25px;
+}
+
+.name {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20px 10px;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav li {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #000;
+}
+
+
+/* Main */
+
+main img {
+  max-width: 100%;
+}
+
+#main-content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#wrapper {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-title {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#main-content p {
+  padding-bottom: 25px;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  /* Navigation */
+
+  nav li {
+    display: inline;
+  }
+
+  #main-content li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+  }
+  /* code above puts main content into 2 columns */
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+}
