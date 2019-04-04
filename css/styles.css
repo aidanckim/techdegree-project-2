@@ -1,4 +1,28 @@
 
+/* TO DO */
+
+
+/* Tablet */
+
+/* change nav background color to header color  */
+
+/* space out footer li */
+
+/* broken content */
+
+/* main-header float right and left */
+
+
+/* Desktop */
+
+/* navigation inline */
+
+/* 3 column layout */
+
+
+
+
+
 /* General */
 
 * {
@@ -138,6 +162,10 @@ footer {
   background-color: #f2f0ee;
 }
 
+.desktop {
+  display: none;
+}
+
 
 
 
@@ -151,6 +179,11 @@ footer {
 
   nav li {
     display: inline;
+    padding: 25px;
+  }
+
+  .name h1 {
+    font-size: 24px;
   }
 
   #main-content li {
@@ -159,6 +192,24 @@ footer {
     margin: 2.5%;
   }
   /* code above puts main content into 2 columns */
+
+  footer {
+    clear: both;
+  }
+  /* code above puts footer below main content  */
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline-block;
+  }
+
+  .bottom-width {
+    width: 60%;
+    margin: 0 auto;
+  }
 
 }
 
