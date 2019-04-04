@@ -18,7 +18,7 @@ a {
 /* Header */
 
 header {
-  background-color: lightgrey;
+  background-color: #f2f0ee;
 }
 
 header h1 {
@@ -103,6 +103,38 @@ main img {
 
 #main-content p {
   padding-bottom: 25px;
+}
+
+.bottom-content {
+  background-color: #f2f0ee;
+}
+
+#bottom-wrapper {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+/* Footer */
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 25px 0px 25px 0px;
+}
+
+footer hr {
+  width: 95%;
+  color: lightgrey;
+}
+
+footer {
+  background-color: #f2f0ee;
 }
 
 
