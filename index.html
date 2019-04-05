@@ -15,20 +15,21 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header-bottom">
-        <img src="images/responsive-layout-profile.png" alt="">
-        <p>Hi! I'm a front-end developer who loves reponsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <img src="images/responsive-layout-profile.png" alt="" class="header-img">
+        <p id="header-p" class="clearfix">Hi! I'm a <span class="span">front-end developer</span> who loves reponsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </div>
     </header>
     <main>
       <div id="wrapper">
         <div class="main-title">
-          <h2>Portfolio</h2>
+          <h2 id="portfolio">Portfolio</h2>
         </div>
         <ul id="main-content">
           <li>
@@ -66,21 +67,28 @@
     </main>
     <footer>
       <div class="bottom-content">
-        <div id="bottom-wrapper">
-          <h2>Contact</h2>
+        <div class="bottom-wrapper">
+          <h2 id="skills">Skills</h2>
+          <p>I have been teaching myself how to code for about 2 years now.</p>
+          <p>I am focusing on front-end web development.</p>
+          <p>I love to learn HTML, CSS and JavaScript daily!</p>
+        </div>
+        <div class="bottom-wrapper">
+          <h2 id="contact">Contact</h2>
           <p class="bottom-width">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-          <p>Phone +1(111)555-1234</p>
-          <p>Email email@yoursite.com</p>
+          <p>Phone <strong>+1(111)555-1234</strong></p>
+          <p>Email <strong>email@yoursite.com</strong></p>
         </div>
       </div>
       <div>
         <hr>
         <ul class="footer-content">
           <li class="footer-name">Christopher Aidan Kim</li>
-          <li class="mobile">Back to top</li>
-          <li class="desktop">Home</li>
-          <li class="desktop">Portfolio</li>
-          <li class="desktop">Contact</li>
+          <li class="mobile"><a href="#top">Back to top</a></li>
+          <li class="desktop"><a href="index.html">Home</a></li>
+          <li class="desktop"><a href="#portfolio">Portfolio</a></li>
+          <li class="desktop"><a href="#skills">Skills</a></li>
+          <li class="desktop"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </footer>

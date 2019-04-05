@@ -1,28 +1,4 @@
 
-/* TO DO */
-
-
-/* Tablet */
-
-/* change nav background color to header color  */
-
-/* space out footer li */
-
-/* broken content */
-
-/* main-header float right and left */
-
-
-/* Desktop */
-
-/* navigation inline */
-
-/* 3 column layout */
-
-
-
-
-
 /* General */
 
 * {
@@ -39,6 +15,21 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: lightgrey;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+.span {
+  color: orange;
+}
 
 /* Header */
 
@@ -96,6 +87,7 @@ nav ul li {
 nav li {
   width: 90%;
   margin: 0 auto;
+  display: block;
 }
 
 nav a {
@@ -134,7 +126,7 @@ main img {
   background-color: #f2f0ee;
 }
 
-#bottom-wrapper {
+.bottom-wrapper {
   width: 90%;
   text-align: center;
   margin: 0 auto;
@@ -147,10 +139,10 @@ main img {
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0 auto;
-  padding: 25px 0px 25px 0px;
+  padding: 25px;
 }
 
 footer hr {
@@ -178,12 +170,35 @@ footer {
   /* Navigation */
 
   nav li {
-    display: inline;
+    width: 90%;
+    margin: 0 auto;
     padding: 25px;
+    display: inline;
   }
 
   .name h1 {
     font-size: 24px;
+  }
+
+
+  /* Header Img */
+
+  .header-img {
+    float: right;
+    margin-left: 25px;
+    width: 300px;
+    height: 175px;
+  }
+
+  .header-bottom {
+    width: 90%;
+    padding-top: 25px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   #main-content li {
@@ -202,8 +217,14 @@ footer {
     display: none;
   }
 
+  .footer-content .footer-name {
+    display: block;
+    margin-right: auto;
+  }
+
   .desktop {
     display: inline-block;
+    padding-left: 25px;
   }
 
   .bottom-width {
@@ -211,10 +232,65 @@ footer {
     margin: 0 auto;
   }
 
+  nav ul li {
+    background-color: #f2f0ee;
+  }
+
+  #main-content li:nth-last-of-type(2n) {
+    clear: left;
+  }
+
 }
 
 
 @media (min-width: 1024px) {
 
+  #main-content li {
+    width: 28.3333%;
+  }
+
+  #main-content li:nth-last-of-type(2n) {
+    clear: none;
+  }
+
+  #main-content li:nth-child(3n + 1) {
+   clear: left;
+  }
+
+  .bottom-width {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  nav {
+    background: none;
+    float: right;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+    padding-top: 10px;
+  }
+
+  .name {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  .header-img {
+    margin-top: 50px;
+    width: 400px;
+    height: 225px;
+  }
+
+  #header-p {
+    margin-top: 100px;
+    max-width: 50%;
+  }
+
+  .header-bottom {
+    padding-bottom: 25px;
+  }
 
 }
